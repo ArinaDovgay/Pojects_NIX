@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Millionaire</title>
+    <link rel="stylesheet" href="/millionaire/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <main>
+      <div id="gameboard">
+      <div id="gameplay" >
+        <div id="lifelines">
+          <button id="fifty-fifty-lifeline-button">50:50</button>
+          <button class="fa fa-phone" id="call-friend-button"></button>
+          <button id="ask-audience-button" class="fa fa-users"></button>
+        </div>
+        <div id="placeholder">
+          <img src="/millionaire/assets/images/giphy.gif" id="placeholder-image" width="30%">
+          <canvas id="myChart" style="width:100%;max-width:600px;display:none;"></canvas>
+        </div>
+        <div id="questions-and-answers">
+          <div id="question"></div>
+          <div id="answers">
+          <div id="answer-placeholder"><span>A:</span><div id="answer"></div></div>
+          <div id="answer-placeholder"><span>B:</span><div id="answer"></div></div>
+          <div id="answer-placeholder"><span>C:</span><div id="answer"></div></div>
+          <div id="answer-placeholder"><span>D:</span><div id="answer"></div></div>
+        </div>
+        </div>
+      </div>
+      <div id="progress">
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="/millionaire/script.js"></script>
+

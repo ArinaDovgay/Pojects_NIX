@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#f0f1f4 50%, #f5a623 50%);
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #242e4c;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 85vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.5em;
+  box-shadow: 0 1.2em 2.8em rgba(0, 41, 22, 0.2);
+}
+
+.wrapper {
+  display: inline;
+  justify-content: space-between;
+  gap: 3em;
+  font-weight: 600;
+  color: #242e4c;
+}
+
+.wrapper p {
+  padding: 0.45em;
+  margin-top: 0.45em;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 1.2em;
+  border: none;
+  color: #444b5f;
+  border-bottom: 1.5px solid #242e4c;
+  padding: 0.45em;
+  margin-top: 0.45em;
+  outline: none;
+}
+input:focus {
+  border-color: #f5a623;
+}
+
+button {
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  margin: 2.7em 0 1.1em 0;
+  background-color: #f5a623;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+span.checkmark {
+  top: -130%;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  margin: 180px;
+  overflow: auto;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox-wrapper:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-wrapper input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-wrapper .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

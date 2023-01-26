@@ -1,0 +1,168 @@
+body {
+    background-image: url("/millionaire/assets/images/ezgif-3-6ca24b6e07.gif");
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content:center;
+}
+
+.border{
+    border: 5px solid red;
+}
+
+.border-diff{
+    border: 5px solid purple;
+}
+
+#gameboard{
+    display: flex;
+    min-height: 100vh;
+    width: 95vw;
+}
+
+#progress{
+    flex:1 2 1%;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#progress > * {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
+
+#gameplay{
+    flex:4 1 40%;
+    display:flex;
+    flex-direction: column;
+}
+
+#placeholder{
+    flex: 4 1 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#questions-and-answers{
+    flex: 3 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#answers{
+    display:flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    min-height: 50%;
+}
+
+#question, #answer-placeholder {
+    color: white;
+    border: 2px solid #5d9ff5;
+    border-radius: 100px;
+    background-color: black;
+    font-family: monospace;
+    font-size: 150%;
+}
+
+#question{
+    min-height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+#answer-placeholder{
+    flex: 1 1 40%;
+    margin: 2px;
+    text-align: start;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#answer-placeholder > span {
+    color: #f29435;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+#lifelines{
+    display: flex;
+    justify-content: center;
+}
+
+#lifelines > * {
+    border: 3px solid #1c76eb;
+    border-radius: 22px;
+    margin-left: 0.5em;
+    flex-basis: 14%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}
+
+.highlight {
+    background: linear-gradient(90deg, rgba(233,158,6,1) 0%, rgba(238,144,4,1) 50%, rgba(254,155,7,1) 100%);
+    color: black;
+}
+
+.correct {
+    background-color: #3eed4f;
+}
+
+.startButton {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.0rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: -1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.startButton:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+
+.startButton:active {
+    transform: scale(1.025);
+  }
+
+.defaultText {
+    font-family: monospace;
+    font-size: 24px;
+    color:rgb(255, 98, 0);
+}
